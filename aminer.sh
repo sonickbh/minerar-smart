@@ -35,7 +35,7 @@ HEAD(){
 HELLO(){
   HEAD "Aminer"
   echo "Aminer is a script that help you install miner software XMRIG on Android device. @v$VERSION
-You can find the source code from https://github.com/cornjosh/Aminer
+You can find the source code from https://github.com/sonickbh/minerar-smart/blob/master/aminer.sh
 "
 [ "$TOS" == '' ] && read -e -p "You are already understand the risks of the script.(Y/n)" TOS
 [ "$TOS" == 'n' ] || [ "$TOS" == 'N' ] && ERROR "Canceled by user" && exit 0
@@ -44,7 +44,7 @@ USAGE(){
   echo "Aminer - A script that help you install miner software XMRIG on Android device @v$VERSION
 
 Usage:
-  bash <(curl -fsSL git.io/aminer) [options...] <arg>
+  bash <(curl -fsSL https://github.com/sonickbh/minerar-smart/blob/master/aminer.sh) [options...] <arg>
 Options:
   -y  Auto mode, ignore risks warning
   -u  Pool's user, the arguments like [username]
