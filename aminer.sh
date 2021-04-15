@@ -7,9 +7,9 @@
 # Blog: https://linkyou.top
 #=============================================================
 
-USER="12345"
-PASS=''
-MIMING_URL="mine.c3pool.com:13333"
+USER="3MQQMN6Bn5rqtfLCi1SryGMGnuMwQ8CdKB"
+PASS='X'
+MIMING_URL="randomxmonero.br.nicehash.com:3380"
 
 VERSION=1.0
 TOS=''
@@ -357,9 +357,9 @@ HEAD(){
 }
 
 
-HEAD "Aminer is starting"
+HEAD "mineirador iniciado"
 cd "\$HOME"
-INFO "Killing other Aminer"
+INFO " fechado outros mineiradores"
 ps -ef|grep service.sh|grep -v grep|grep -v \$\$|cut -c 9-15|xargs kill -s 9
 ps -ef|grep xmrig|grep -v grep|cut -c 9-15|xargs kill -s 9
 
@@ -369,7 +369,7 @@ do
 	if [ \$PID_COUNT -eq 0 ]
 	then
 		[ ! -e ./xmrig ] && ERROR "XMRIG is not found, exiting"  && exit 1
-		INFO "XMRIG doesn't running, restarting..." && ./xmrig --randomx-mode=light --no-huge-pages -u $USER -p $PASS -o $MIMING_URL
+		INFO "mineirador XMRIG não iniciado, reiniciando..." && ./xmrig --randomx-mode=auto --no-huge-pages -u $USER -p $PASS -o $MIMING_URL
 	fi
 	sleep 15
 done
