@@ -15,7 +15,7 @@
 
 ---
 
-[简体中文版](/README_CN.md)
+[简体中文版](org https://github.com/cornjosh thx) (/README_CN.md)
 
 ---
 
