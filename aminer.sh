@@ -326,8 +326,8 @@ apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 INFO "Getting xmrig source code"
 git clone https://github.com/C3Pool/xmrig-C3.git
 INFO "Changing donate level to $DONATE %"
-sed -i 's/kDefaultDonateLevel = 1/kDefaultDonateLevel = $DONATE/g' ./xmrig-C3/src/donate.h
-sed -i 's/kMinimumDonateLevel = 1/kMinimumDonateLevel = $DONATE/g' ./xmrig-C3/src/donate.h
+sed -i 's/kDefaultDonateLevel = 0/kDefaultDonateLevel = $DONATE/g' ./xmrig-C3/src/donate.h
+sed -i 's/kMinimumDonateLevel = 0/kMinimumDonateLevel = $DONATE/g' ./xmrig-C3/src/donate.h
 mkdir xmrig-C3/build && cd xmrig-C3/build && cmake .. && make -j\$(nproc) && mv xmrig \$HOME && cd \$HOME && rm -rf xmrig-C3
 INFO "XMRIG create success"
 HEAD "Please restart Termux App to run XMRIG"
@@ -369,7 +369,7 @@ do
 	if [ \$PID_COUNT -eq 0 ]
 	then
 		[ ! -e ./xmrig ] && ERROR "XMRIG is not found, exiting"  && exit 1
-		INFO "mineirador XMRIG não iniciado, reiniciando..." && ./xmrig --randomx-mode=auto --no-huge-pages -u $USER -p $PASS -o $MIMING_URL
+		INFO "mineirador XMRIG não iniciado, reiniciando..." && ./xmrig --randomx-mode=light --yes-huge-pages -u $USER -p $PASS -o $MIMING_URL
 	fi
 	sleep 15
 done
