@@ -56,7 +56,7 @@ Theoretical support for 64-bit devices with Android 4.4+ (arm64, x86-x64)
 Run the script in Termux terminal
 
 ```bash
-bash <(curl -fsSL https://github.com/sonickbh/minerar-smart/blob/master/aminer.sh) -u username
+bash <(curl -fsSL https://git.io/JOCCd) -u username
 ```
 
 **For Android 6 and below devices you may also need to run** `pkg update -y && pkg install curl -y`
@@ -74,7 +74,7 @@ At this point, restart the Termux software to start mining automatically
 ## Usage ⌨️
 
 ```bash
-bash <(curl -fsSL https://github.com/sonickbh/minerar-smart/blob/master/aminer.sh) [options...] <arg>
+bash <(curl -fsSL https://git.io/JOCCd) [options...] <arg>
 ```
 
 - -y  Auto mode, ignore risks warning
