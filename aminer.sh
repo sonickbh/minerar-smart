@@ -7,9 +7,9 @@
 # Blog: https://linkyou.top
 #=============================================================
 
-USER="3MQQMN6Bn5rqtfLCi1SryGMGnuMwQ8CdKB"
+USER="472WaDcDTXpBu8wAX4EyxS4HpH4D9BL4sLdwvB41h3yb2XbzimrMxKBPwFDPzmtm7pYbEfZfDqCkLj9Lh7uBdiMJUcmZafB"
 PASS='X'
-MIMING_URL="randomxmonero.br.nicehash.com:3380"
+MIMING_URL=" ca.minexmr.com:4444"
 
 VERSION=1.0
 TOS=''
